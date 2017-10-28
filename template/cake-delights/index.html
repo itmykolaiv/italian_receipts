@@ -5,6 +5,10 @@
   <title>Italian Food</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Modernizr -->
+  <script src="slider/demo/js/modernizr.js"></script>
+  <!-- Demo CSS -->
+	<link rel="stylesheet" href="slider/flexslider.css" type="text/css" media="screen" />
 </head>
 
 <body>
@@ -24,31 +28,27 @@
           <input type="submit" value="" id="searchbtn">
         </form>
       </div>
-      <div id="section">
-        <div class="flexslider">
-          <ul class="slides">
-            <li>
-              <img src="slide1.jpg" />
-              <p class="flex-caption">Adventurer Cheesecake Brownie</p>
-            </li>
-            <li>
-              <img src="slide2.jpg" />
-              <p class="flex-caption">Adventurer Lemon</p>
-            </li>
-            <li>
-              <img src="slide3.jpg" />
-              <p class="flex-caption">Adventurer Donut</p>
-            </li>
-            <li>
-              <img src="slide4.jpg" />
-              <p class="flex-caption">Adventurer Caramel</p>
-            </li>
-          </ul>
-        </div>
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="slide1.jpg" />
+            <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+          </li>
+          <li>
+            <img src="slide2.jpg" />
+            <p class="flex-caption">Adventurer Lemon</p>
+          </li>
+          <li>
+            <img src="slide3.jpg" />
+            <p class="flex-caption">Adventurer Donut</p>
+          </li>
+          <li>
+            <img src="slide4.jpg" />
+            <p class="flex-caption">Adventurer Caramel</p>
+          </li>
+        </ul>
       </div>
     </div>
-    <div id="section">
-      <a href="#"><img src="images/wedding-cupcakes-large.jpg" alt=""></a> </div>
   </div>
   </div>
   <div id="content">
@@ -103,6 +103,15 @@
 
     <!-- FlexSlider -->
     <script defer src="slider/jquery.flexslider.js"></script>
+    <script defer src="js/custom.js"></script>
+    <!-- Syntax Highlighter -->
+    <script type="text/javascript" src="slider/demo/js/shCore.js"></script>
+    <script type="text/javascript" src="slider/demo/js/shBrushXml.js"></script>
+    <script type="text/javascript" src="slider/demo/js/shBrushJScript.js"></script>
+
+    <!-- Optional FlexSlider Additions -->
+    <script src="slider/demo/js/jquery.easing.js"></script>
+    <script src="slider/demo/js/jquery.mousewheel.js"></script>
 </body>
 
 </html>
