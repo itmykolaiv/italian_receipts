@@ -25,7 +25,6 @@ p a {
 	width: 960px;
 }
 #header div div {
-	height: 110px;
 	overflow: hidden;
 	position: relative;
 }
@@ -978,4 +977,30 @@ p a {
 	height: 226px;
 	padding: 0;
 	width: auto;
+}
+
+#header .list-and-search:after {
+    content: '';
+    clear: both;
+}
+#header .list-and-search ul {
+    float: left;
+}
+#header .list-and-search form {
+    float: right;
+}
+#header .list-and-search form input#search {
+    background: url(../images/input-search.gif) no-repeat 0 0;
+    border: 0;
+    height: 30px;
+    padding: 0 5px;
+	width: 220px;
+	vertical-align: middle;
+}
+#header .list-and-search form input#searchbtn {
+    background: url(../images/sprite-buttons.gif) no-repeat 0 -291px;
+    border: none;
+    height: 30px;
+	width: 60px;
+	vertical-align: middle;
 }
