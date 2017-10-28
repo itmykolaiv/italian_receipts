@@ -1,6 +1,6 @@
 body {
-	background: #6a3e4f;
-	color: #78394e;
+	background: white;
+	color: black;
 	font-family: Verdana;
 	font-size: 12px;
 	margin: 0;
@@ -15,14 +15,13 @@ img {
 	border: 0;
 }
 p a {
-	color: #df4b9f;
+	color: #46142F;
 }
 #header {
-	background: #f5f5f5 url(../images/bg-body.gif) repeat-x center top;
+	background: #f5f5f5;
 }
 #header div {
 	margin: 0 auto;
-	width: 960px;
 }
 #header div div {
 	overflow: hidden;
@@ -48,7 +47,7 @@ p a {
 	width: auto;
 }
 #header div div div div a {
-	border-right: 1px solid #6c404f;
+	border-right: 1px solid #3A2222;
 	color: #6c404f;
 	display: block;
 	float: left;
@@ -118,7 +117,6 @@ p a {
 	background: #aa6581;
 	height: 360px;
 	padding: 10px;
-	width: 940px;
 }
 #header div div.section {
 	height: 190px;
@@ -169,13 +167,11 @@ p a {
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 30px 0;
-	width: 960px;
 }
 #content div#services, #content div#about, #content div {
 	margin: 0 auto;
 	padding: 10px 30px 30px;
 	position: relative;
-	width: 900px;
 }
 #content div#services, #content div#about {
 	overflow: hidden;
