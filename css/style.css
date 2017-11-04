@@ -322,7 +322,7 @@ p a {
 }
 #content div#about div.aside span {
 	background: none;
-	color: #DF4B9F;
+	color: #0e0000;
 	display: block;
 	font-size: 18px;
 	text-indent: 0;
@@ -334,7 +334,7 @@ p a {
 	text-align: justify;
 }
 #content div h1 {
-	color: #84284d;
+	color: #000000;
 	font-family: Trebuchet MS;
 	font-size: 25px;
 	font-style: italic;
