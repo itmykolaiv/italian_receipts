@@ -17,6 +17,11 @@ img {
 p a {
 	color: #46142F;
 }
+.clear:after {
+    content: '';
+    clear: both;
+    display: table;
+}
 #header {
 	background: #ffffff;
 }
