@@ -98,16 +98,16 @@ p a {
 }
 #header div ul li a {
 	background: 
-	color: #5b5c5e;
+	color: #0e0000;
 	display: block;
-	font-size: 20px;
+	font-size: 27px;
 	text-align: center;
 	text-decoration: none;
 	text-shadow: 1px 1px 0 #e8edf1;
 	text-transform: capitalize;
 }
 #header div ul li a:hover, #header ul li.current a {
-	color: #b13c68;
+	color: #0e0000;
 	text-shadow: 1px 1px 0 #ebb8c7;
 }
 #header div ul li.current a {
