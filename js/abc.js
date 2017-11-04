@@ -16,6 +16,7 @@ function send_request(command, query, cb) {
 
 function build_recipes() {
   var rep_container = document.querySelector('.js_recipes-container');
+  
 }
 
 function create_recipe() {

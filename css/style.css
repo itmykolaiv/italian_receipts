@@ -237,7 +237,6 @@ p a {
 	font-size: 23px;
 	margin: 0;
 	padding-left: 20px;
-	padding-top: 30px;
 }
 #content div#about div.section div#visitshop div p span, #content div#services div.section div#visitshop div p span, #content div div#visitshop div p span {
 	color: #d1467d;
@@ -385,6 +384,9 @@ p a {
 	height: auto;
 	padding: 0 0 0 20px;
 	width: 810px;
+}
+.home h2{
+	padding-top: 0;
 }
 #content div.home div.aside h1 {
 	color: #84284d;
