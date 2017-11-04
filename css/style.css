@@ -17,8 +17,14 @@ img {
 p a {
 	color: #46142F;
 }
+.clear:after {
+    content: '';
+    clear: both;
+    display: table;
+}
 #header {
 	background: #ffffff;
+	border-bottom: 1px solid #000;
 }
 #header div {
 	margin: 0 auto;
@@ -1013,7 +1019,39 @@ p a {
 	text-shadow: 0 -1px 0 rgba(0,0,0,.3);
 	font-size: 14px;
 	line-height: 18px;
-  }
-  li.css a {
+}
+li.css a {
 	border-radius: 0;
-  }
+}
+.recipes-wrapper .one-recipe .one-recipe-descr {
+    float: left;
+    width: 50%;
+}
+.recipes-wrapper .one-recipe .one-recipe-image {
+    float: right;
+}
+.recipes-wrapper {
+    border: 1px solid #ccc;
+    padding: 10px 30px 10px;
+}
+.recipes-wrapper .one-recipe {
+
+}
+.recipes-wrapper .one-recipe-descr h2 a {
+    color: #7e1118;
+}
+.recipes-wrapper .one-recipe-descr p {
+    font-size: 16px;
+
+}
+
+.recipes-wrapper .one-recipe .one-recipe-descr .view {
+    background: url(../images/sprite-buttons.gif) no-repeat 0 -451px;
+    color: #84284d;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+}
