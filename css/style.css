@@ -940,7 +940,7 @@ p a {
 	width: 65px;
 }
 #footer div#navigation {
-	background: #6a3e4f;
+	background: #000000;
 	height: 80px;
 	margin-top: 20px;
 	width: 100%;
@@ -979,8 +979,8 @@ p a {
 	color: #EBD7E0;
 }
 #footer div#navigation div p {
-	color: #995870;
-	font-size: 11px;
+	color: #FFFFFF;
+	font-size: 18px;
 	margin: 0;
 	text-align: center;
 }
