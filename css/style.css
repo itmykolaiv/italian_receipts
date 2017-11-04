@@ -97,10 +97,10 @@ p a {
 	width: 160px;
 }
 #header div ul li a {
-	background: url(../images/sprite-buttons.gif) no-repeat 0 -205px;
+	background: 
 	color: #5b5c5e;
 	display: block;
-	font-size: 14px;
+	font-size: 20px;
 	text-align: center;
 	text-decoration: none;
 	text-shadow: 1px 1px 0 #e8edf1;
@@ -111,7 +111,7 @@ p a {
 	text-shadow: 1px 1px 0 #ebb8c7;
 }
 #header div ul li.current a {
-	background: url(../images/sprite-buttons.gif) no-repeat 0 -97px;
+	
 }
 #header div div#section, #header div div.section {
 	background: #aa6581;
