@@ -403,7 +403,7 @@ p a {
 	padding-top: 0;
 }
 #content div.home div.aside h1 {
-	color: #84284d;
+	color: #000000;
 	font-family: Trebuchet MS;
 	font-size: 25px;
 	font-style: italic;
@@ -979,7 +979,7 @@ p a {
 	color: #EBD7E0;
 }
 #footer div#navigation div p {
-	color: #FFFFFF;
+	color: #C0C0C0;
 	font-size: 18px;
 	margin: 0;
 	text-align: center;
