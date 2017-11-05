@@ -103,11 +103,11 @@ p a {
 	width: 160px;
 }
 #header div ul li a {
-<<<<<<< HEAD
+
 	background: url(../images/sprite-buttons.gif) no-repeat 0 -205px;
-=======
+
 	background: 
->>>>>>> 4d03d54b354c4f234920be67aefe6e33f42129da
+
 	color: #0e0000;
 	display: block;
 	font-size: 27px;
@@ -118,11 +118,10 @@ p a {
 }
 #header div ul li a:hover, #header ul li.current a {
 	color: #0e0000;
-<<<<<<< HEAD
+
 	text-shadow: 1px 0px 0 #0e0000;
-=======
-	text-shadow: 1px 1px 0 #ebb8c7;
->>>>>>> 4d03d54b354c4f234920be67aefe6e33f42129da
+
+	
 }
 #header div ul li.current a {
 	
