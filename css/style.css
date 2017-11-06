@@ -1062,3 +1062,23 @@ li.css a {
     text-decoration: none;
     width: 120px;
 }
+#recipe div{
+	width:20%;
+	margin-left:800px;
+	top: -300px;
+	border: 2px dashed #663300;
+	}
+	#pizza_img{
+		margin-left:10px;
+		border: 5px solid
+	}
+	#recipe{
+		height:370px
+	}
+	#recipe2 p{
+		margin-left:20px;
+	}
+	.step{
+		font-size: 150%;
+		margin-left:40%;
+		color: #6600cc}
