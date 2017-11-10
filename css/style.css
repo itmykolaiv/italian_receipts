@@ -1030,6 +1030,9 @@ p a {
 li.css a {
 	border-radius: 0;
 }
+.content-product h1 {
+	text-align: center;
+}
 .recipes-wrapper .one-recipe .one-recipe-descr {
     float: left;
     width: 50%;
@@ -1037,12 +1040,17 @@ li.css a {
 .recipes-wrapper .one-recipe .one-recipe-image {
     float: right;
 }
+.recipes-wrapper .one-recipe .one-recipe-image img{
+	width: 400px;
+}
 .recipes-wrapper {
-    border: 1px solid #ccc;
-    padding: 10px 30px 10px;
+		padding: 10px 30px 10px;
+		margin: 0 30px;
 }
 .recipes-wrapper .one-recipe {
-
+	border: 1px solid #ccc;
+	margin: 10px;
+	padding: 10px 20px;
 }
 .recipes-wrapper .one-recipe-descr h2 a {
     color: #7e1118;
