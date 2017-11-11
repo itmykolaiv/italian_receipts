@@ -30,14 +30,22 @@ function build_recipes(recipe) {
       </a>
     </div>
   </div>`;
-  var command = recipe ? 'search' : 'random';
-  var query = recipe ? '?cuisine=italian&number=10&query=' + recipe : '?number=10&tags=italian';
-  send_request(command, query, function (data) {
-    for (var i = 0; i < data.recipes.length; i++) {
-      var content = templ.replace(/\{id\}/g, data.recipes[i].id).replace('{title}', data.recipes[i].title).replace('{image_link}', data.recipes[i].image);
-      get_summary(content, data.recipes[i].id);
-    }
-  });
+  if (recipe) {
+    send_request('search', '?cuisine=italian&number=10&query=' + recipe, function (data) {
+      for (var i = 0; i < data.results.length; i++) {
+        var content = templ.replace(/\{id\}/g, data.results[i].id).replace('{title}', data.results[i].title).replace('{image_link}', 'https://spoonacular.com/recipeImages/' + data.results[i].image);
+        get_summary(content, data.results[i].id);
+      }
+    });
+  }
+  else {
+    send_request('random', '?number=10&tags=italian', function (data) {
+      for (var i = 0; i < data.recipes.length; i++) {
+        var content = templ.replace(/\{id\}/g, data.recipes[i].id).replace('{title}', data.recipes[i].title).replace('{image_link}', data.recipes[i].image);
+        get_summary(content, data.recipes[i].id);
+      }
+    });
+  }
 }
 function get_summary(content, id) {
   send_request(id + '/summary', '', function(data) {

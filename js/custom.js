@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var recipeQ = urlParams.get('recipe');
     if (recipeQ) {
         wrapper.innerHTML = '';
-        build_recipes();
+        build_recipes(recipeQ);
     }
     else if (wrapper) {
         wrapper.innerHTML = '';
