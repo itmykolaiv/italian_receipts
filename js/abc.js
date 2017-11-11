@@ -14,7 +14,7 @@ function send_request(command, query, cb) {
 }
 
 
-function build_recipes() {
+function build_recipes(recipe) {
   var templ = `
   <div class="one-recipe clear">
     <div class="one-recipe-descr">
@@ -30,7 +30,9 @@ function build_recipes() {
       </a>
     </div>
   </div>`;
-  send_request('random', '?number=10&tags=italian', function (data) {
+  var command = recipe ? 'search' : 'random';
+  var query = recipe ? '?cuisine=italian&number=10&query=' + recipe : '?number=10&tags=italian';
+  send_request(command, query, function (data) {
     for (var i = 0; i < data.recipes.length; i++) {
       var content = templ.replace(/\{id\}/g, data.recipes[i].id).replace('{title}', data.recipes[i].title).replace('{image_link}', data.recipes[i].image);
       get_summary(content, data.recipes[i].id);
@@ -70,3 +72,13 @@ function build_recipe_info(id) {
     }
   });
 }
+
+function simulateClick(elem) {
+  var evt = new MouseEvent('click', {
+      bubbles: true,
+      cancelable: true,
+      view: window
+  });
+  // If cancelled, don't dispatch our event
+  var canceled = !elem.dispatchEvent(evt);
+};
