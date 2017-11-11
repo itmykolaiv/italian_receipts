@@ -1103,11 +1103,11 @@ li.css a {
 }
 .recipe-header-left {
     float: left;
-    width: 30%;
+    width: 39%;
 }
 .recipe-header-right {
     float: left;
-    width: 70%;
+    width: 50%;
 }
 .recipe-ingredients {
 	border: 2px dashed #663300;
