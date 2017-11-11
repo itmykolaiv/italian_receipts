@@ -1093,3 +1093,52 @@ li.css a {
 	#pizza_name{
 		font-size: 150%
 	}
+
+	.recipe-header {
+    padding: 20px;
+}
+.recipe-header h1,
+.recipe-header h3 {
+    text-align: center;
+}
+.recipe-header-left {
+    float: left;
+    width: 30%;
+}
+.recipe-header-right {
+    float: left;
+    width: 70%;
+}
+.recipe-ingredients {
+	border: 2px dashed #663300;
+}
+.recipe-ingredients ul{
+	-moz-column-gap: 20px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 20px;
+	column-count: 2;
+	column-gap: 20px;
+}
+.recipe-ingredients ul li {
+	list-style: none;
+	padding: 10px;
+}
+.recipe-ingredients ul li span{
+	vertical-align: 10px;
+}
+
+.recipe-ingredients ul li img {
+    width: 35px;
+}
+
+.recipe-step {
+	text-align: center;
+	font-size: 16px;
+}
+.recipe-step h3 {
+	color: #6600cc;
+}
+#header form button {
+	padding: 5px;
+	vertical-align: middle;
+}

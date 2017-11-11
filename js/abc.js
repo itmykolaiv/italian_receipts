@@ -45,7 +45,28 @@ function get_summary(content, id) {
   });
 }
 
-function create_recipe() {
-  var rep_div = document.createElement('div');
-  //Create another elements with needed attributes.
+function build_recipe_info(id) {
+  var step_templ = `
+  <div class="recipe-step">
+    <h3>STEP {step}</h3>
+    <p class="step-description">{step_description}</p>
+  </div>`;
+  var ingr_templ = `<li>{ingredient}</li>`;
+
+  send_request(id + '/information', '', function(data) {
+    document.querySelector('.js_recipe-name').innerHTML = data.title;
+    document.querySelector('.js_recipe-image').src = data.image;
+    var list = document.querySelector('.js_ingredients-list');
+    for (var i = 0; i < data.extendedIngredients.length; i++) {
+      var li = ingr_templ.replace('{ingredient}', data.extendedIngredients[i].originalString);
+      list.innerHTML += li;
+    }
+  });
+  send_request(id + '/analyzedInstructions', '', function(data) {
+    var steps = document.querySelector('.js_steps');
+    for (var i = 0; i < data[0].steps.length; i++) {
+      var step = step_templ.replace('{step}', data[0].steps[i].number).replace('{step_description}', data[0].steps[i].step);
+      steps.innerHTML += step;
+    }
+  });
 }
