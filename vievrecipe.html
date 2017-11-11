@@ -1,91 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Recipe</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<!--[if IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css"><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"><![endif]-->
-<!--[if IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"><![endif]-->
-</head>
-<body>
-<div id="header">
-  <div>
-    <div>
-      <div id="logo"> <a href="#"><img src="images/logo1.png" alt=""></a> </div>
-    </div>
-    <div class="list-and-search">
-        <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="product.html">Receipts</a></li>
-            <li><a href="about.html">About us</a></li>
-          </ul>
-          <form action="#">
-            <input type="text" id="search" maxlength="30">
-            <input type="submit" value="" id="searchbtn">
-          </form>
-  
-	</div>
-   
-</div>
 
-</div>
-<div id = "content"><div id="recipe">
-    <h1 id="pizza_name">Pizza Margherita</h1>
-  <img id="pizza_img" src="img/large.jpg">
- 
-<div>
- 
-<h3>Ingredients</h3>
-<p2>FOR PASTA <br>
-2 lb Italian "00" flour or all-purpose flour<br>
-1 oz fresh yeast<br>
-2 cups water<br>
-1 teaspoon salt<br>
-FOR DRESSING<br>
-6 tablespoons extra virgin olive oil<br>
-1 lb mozzarella cheese<br>
-basil leaves to taste<br>
-1 lb canned tomatoes<br>
-salt to taste</p2></div>
-</div>
-<div id="recipe2">
-  <p><span class="step">STEP 1</span><br>
-    On a wooden or marble work surface, shape the flour into a well. Place the yeast, salt and warm water in the center. Be careful not to let the salt come in contact with the yeast.<br>
-    
-    <span class="step">STEP 2</span><br>
-    
-    Knead the dough vigorously with your hands for 15-20 minutes, or in a mixer, until the dough is soft and smooth.<br>
-    
-    <span class="step">STEP 3</span><br>
-    
-    Once you have the right consistency, adding a bit of water or flour if necessary, shape the dough into a ball. Cover with a plastic bowl so that the dough is protected from the air. Let rise for 3 or 4 hours at room temperature for about an hour in a warm place. <br>
-    
-    <span class="step">STEP 4</span><br>
-    
-    Once the dough will be doubled in volume, ricavatene 6 loaves, modellateli in spherical shapes, cover with a sheet of plastic wrap and let them rise at room temperature for a couple of hours or in a warm place for about 45 minutes.<br>
-    
-    <span class="step">STEP 5</span><br>
-    
-    As soon as the loaves have doubled in volume, prepare the tomato sauce and place it in a bowl. Add a pinch of salt and 1/3 of the olive oil.<br>
-    
-    <span class="step">STEP 6</span><br>
-    
-    Knead the dough, then flattening them using your fingers. <br>
-    
-    <span class="step">STEP 7</span><br>
-    
-    Use a ladle or a spoon to spread a good amount of tomato sauce on the pizza. Then, cover with mozzarella, torn into pieces. Garnish with a couple leaves of basil and bake in a 480° F oven for 5 or 6 minutes.<br>
-    
-    <span class="step">STEP 8</span><br>
-    
-    Once ready, remove the pizza from the oven. Garnish with more basil and a drizzle of oil. Serve immediately.</p></div></div>
-<div id="footer">
-  <div id="navigation">
+<head>
+  <title>Recipe</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/abc.js"></script>
+  <script src="js/custom.js"></script>
+</head>
+
+<body>
+  <div id="header">
     <div>
-      <p>Contact us: liza.zaharenko25@gmail.com, yasyashuua@gmail.com, vanyazlotnik07@gmail.com, office.sofi@gmail.com</p>
+      <div>
+        <div id="logo">
+          <a href="#">
+            <img src="images/logo1.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="list-and-search">
+        <ul>
+          <li class="current">
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="product.html" class="js_find_recipies">Receipts</a>
+          </li>
+          <li>
+            <a href="about.html">About us</a>
+          </li>
+        </ul>
+        <form action="#">
+          <input type="text" id="search" maxlength="30">
+          <input type="submit" value="" id="searchbtn">
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="recipe-container">
+    <div class="recipe-header clear">
+      <h1 class='js_recipe-name'></h1>
+      <div class="recipe-header-left">
+          <img class="js_recipe-image">
+      </div>
+      <div class="recipe-header-right">
+          <div class="recipe-ingredients">
+            <h3>Ingredients</h3>
+            <ul class="js_ingredients-list"></ul>
+          </div>
+      </div>
+    </div>
+    <div class="recipes-steps js_steps">
+      
     </div>
   </div>
+  <div id="footer">
+    <div id="navigation">
+      <div>
+        <p>Contact us: liza.zaharenko25@gmail.com, yasyashuua@gmail.com, vanyazlotnik07@gmail.com, office.sofi@gmail.com</p>
+      </div>
+    </div>
   </div>
 </body>
+
 </html>
